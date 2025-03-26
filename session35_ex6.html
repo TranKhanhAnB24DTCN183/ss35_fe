@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./session35_ex6.css">
+</head>
+<body>
+    <div class="nav">
+        <h2>Danh mục</h2>
+        <button class="add-category">Thêm mới danh mục</button>
+    </div>
+    <div class="nav">
+        <select id="statusFilter" class="filter">
+            <option value="all">Tất cả</option>
+            <option value="active">Đang hoạt động</option>
+            <option value="inactive">Ngừng hoạt động</option>
+        </select>
+        <input type="text" id="search" placeholder="Tìm kiếm danh mục" class="filter">
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Mã danh mục</th>
+                <th>Tên danh mục</th>
+                <th>Trạng thái</th>
+                <th>Chức năng</th>
+            </tr>
+        </thead>
+        <tbody id="categoryTable"></tbody>
+    </table>
+
+    <div class="modal" id="categoryModal">
+        <div class="modal-content">
+            <h3>Thêm mới danh mục</h3>
+            <label>Mã danh mục:</label>
+            <input type="text" id="categoryId">
+            <label>Tên danh mục:</label>
+            <input type="text" id="categoryName">
+            <div id="categoryStatus">
+                <label>Trạng thái:</label>
+                <input type="radio" name="status" value="active" checked> Đang hoạt động
+                <input type="radio" name="status" value="inactive"> Ngừng hoạt động
+            </div>
+            <div class="fotter">
+                <button id="closeModal">Hủy</button>
+                <button id="saveCategory">Thêm</button>
+            </div>
+        </div>
+    </div>
+    <script src="./session35_ex6.js"></script>
+</body>
+</html>

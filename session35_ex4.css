@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    gap: 20px;
+}
+
+button{
+    width: 150px;
+    align-self: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px floralwhite solid;
+    background: greenyellow;
+    box-shadow: 2px 2px 5px rgba(57, 211, 88, 0.3);
+}
+.row div{
+    border: 1px solid black;
+    padding: 5px;
+}
+th{ 
+    padding: 20px 50px;
+    border: 1px solid black;
+    background-color: gray;
+}
+td{ 
+    padding: 20px 50px;
+    border: 1px solid black;
+}
+.tab{
+    display: flex;
+    gap: 10px;
+}
+button.prev,button.next{
+    width: 100px;
+    background:fixed;
+    border: 2px rgb(134, 206, 224) solid;
+    box-shadow: 2px 2px 5px rgba(99, 178, 189, 0.3);
+    color: rgb(25, 219, 219);
+}
+button.num{
+    text-align: center;
+    background:fixed;
+    width: 40px;
+    border: 2px rgb(134, 206, 224) solid;
+    box-shadow: 2px 2px 5px rgba(99, 178, 189, 0.3);
+    color: rgb(25, 219, 219);
+}
+button.num.active {
+    background: rgb(30, 214, 214);
+    color: white;
+    font-weight: bold;
+    border: 2px solid rgb(0, 145, 145);
+}

@@ -1,0 +1,41 @@
+img{
+    width: 150px;
+    height: 150px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+}
+
+button{
+ background-color: blue;
+ padding: 5px;
+ color: white;
+ margin: 5px;
+ border-radius: 5px;
+ width: fit-content;
+ height: fit-content;
+}
+form button{
+    color: white;
+    background-color: green;
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+}
+form{
+    width: 100%;
+    overflow: hidden;
+}
+input{
+  width: 90%;
+}
